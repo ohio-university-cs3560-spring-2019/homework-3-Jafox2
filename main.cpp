@@ -1,9 +1,10 @@
 #include <iostream>
 
-int deviation( int* a, int n);
+double deviation( int* a, int n);
 
 int main()
 {
-	  int a[4] = {1,2,3,4};
-		std::cout << deviation(a) << std::endl;
+	  int a[9] = {4,9,11,12, 17, 5, 8, 12, 14};
+	  //int s = a.size();
+		std::cout << deviation(a, 9) << std::endl;
 }
