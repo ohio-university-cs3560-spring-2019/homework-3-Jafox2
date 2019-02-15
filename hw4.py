@@ -1,5 +1,16 @@
-Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 22:20:52) [MSC v.1916 32 bit (Intel)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
->>> euler test 1
-SyntaxError: invalid syntax
->>> 
+sum = 0
+print ("All natural numbers below 10 that are multiples of 3 or 5")
+for x in range (1,10):
+    if ((x % 3 == 0) or (x % 5 == 0)):
+        print (x)
+        sum += x
+
+print ("Their sum: ", sum)
+sum = 0
+
+#All natural numbers below 1000 that are multiples of 3 or 5
+for x in range (1,1000):
+    if ((x % 3 == 0) or (x % 5 == 0)):
+        sum += x
+
+print ("All natural numbers below 1000 that are multiples of 3 or 5 have a sum of: ", sum)
